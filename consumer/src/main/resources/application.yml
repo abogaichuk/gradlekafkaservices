@@ -1,0 +1,12 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+
+  kafka:
+    consumer:
+      bootstrap-servers: ${kafka_bootstrap_servers:kafka:9092}
+      properties:
+        spring.json.trusted.packages: "*"
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer

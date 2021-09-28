@@ -1,0 +1,5 @@
+rootProject.name = 'gradlekafkaservices'
+include 'producer'
+include 'consumer'
+include 'entities'
+
